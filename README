@@ -45,6 +45,12 @@
         Note for windows users: use "nmake" instead of "make" to install
         Date::Spoken::German.
         
+        Just for convenience I've added two install scripts. The first one,
+        install.sh, is for *nix systems with a /bin/sh, the second one,
+        install.cmd, for windows system. They don't do anything more than
+        explained above, install.sh uses "make" and install.cmd calls
+        "nmake".
+        
                      BUGS
                      ====
 
