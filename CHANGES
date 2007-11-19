@@ -9,3 +9,7 @@ CHANGES file for perl module Date::Spoken::German
      Added install.sh and install.cmd scripts for my own
      convenience :)
      (2003/12/17)
+
+0.4: Fixed Makefile options to be more concise and
+     added "use Encoding 'latin1' to module and tests.
+     (2007/11/19)

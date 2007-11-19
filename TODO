@@ -1,7 +1,0 @@
-ToDo list for Date::Spoken::German
-==================================
-
-- Handling of charsets (at the moment it is assumed that ISO-8859-1
-  or ISO-8859-15 is installed)
-
-- OO style interface

@@ -6,7 +6,7 @@
 
 =head1 NAME
 
-Date::Spoken::German - Output dates as ASCII text as you would speak it
+Date::Spoken::German - Output dates as Latin1 text as you would speak it
 
 =head1 SYNOPSIS
 
@@ -19,7 +19,7 @@ Date::Spoken::German - Output dates as ASCII text as you would speak it
 
 This module provides you with functions to easily convert a date (given
 as either integer values for day, month and year or as a unix timestamp)
-to its representation as german text, like you would read it aloud.
+to its representation as German text, like you would read it aloud.
 
 =head1 EXPORTABLE TAGS
 
@@ -94,14 +94,16 @@ Type B<perldoc perlmod> to get info on Perl modules.
 
 package Date::Spoken::German;
 
+use Encoding 'latin1';
+use POSIX;
 require Exporter;
-require POSIX;
 
-@ISA = qw(Exporter Date::Spoken::German);
+@ISA = qw(Exporter);
 @EXPORT = qw(datetospoken timetospoken);
 %EXPORT_TAGS = ( ALL => [qw(yeartospoken datetospoken timetospoken monthtospoken daytospoken)] );
-$VERSION = "0.03";
-$AUTHOR = 'Christian Winter <thepoet@a-za-z0-9.de>';
+
+our $VERSION = "0.04";
+our $AUTHOR = 'Christian Winter <thepoet@a-za-z0-9.de>';
 
 my %cipher = (	1 => "ein", 2 => "zwei", 3 => "drei", 4 => "vier", 5 => "fünf", 6 => "sechs", 7 => "sieben",
 		8 => "acht", 9 => "neun", 10 => "zehn", 11 => "elf", 12 => "zwölf", 16 => "sechzehn", 17 => "siebzehn", 18 => "achzehn" );

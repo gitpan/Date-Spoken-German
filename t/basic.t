@@ -2,6 +2,7 @@
 
 use Test::More 'no_plan';
 use Date::Spoken::German;
+use Encoding 'latin1';
 
 my @datetests = (	["dritter Mai neunzehnhundertfünfundsiebzig", [3,5,1975]],
 			["sechzehnter Dezember vierzehn", [16,12,14]],
