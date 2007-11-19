@@ -94,7 +94,7 @@ Type B<perldoc perlmod> to get info on Perl modules.
 
 package Date::Spoken::German;
 
-use Encoding 'latin1';
+use encoding 'latin1';
 use POSIX;
 require Exporter;
 
@@ -102,7 +102,7 @@ require Exporter;
 @EXPORT = qw(datetospoken timetospoken);
 %EXPORT_TAGS = ( ALL => [qw(yeartospoken datetospoken timetospoken monthtospoken daytospoken)] );
 
-our $VERSION = "0.04";
+our $VERSION = "0.05";
 our $AUTHOR = 'Christian Winter <thepoet@a-za-z0-9.de>';
 
 my %cipher = (	1 => "ein", 2 => "zwei", 3 => "drei", 4 => "vier", 5 => "fünf", 6 => "sechs", 7 => "sieben",
